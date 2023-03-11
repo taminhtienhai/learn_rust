@@ -1,12 +1,13 @@
 [package]
-name = "learn-rust"
+name = "proc_enum"
 version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
-[workspace]
-members = ["crates/*"]
+[lib]
+proc-macro = true
 
 [dependencies]
-proc_enum = { path = "crates/proc_enum" }
+proc-macro2 = "1.0.51"
+quote = "1.0.23"
+syn = { version = "1.0.108", features = ["full"]}
