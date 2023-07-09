@@ -10,5 +10,4 @@ fn main() {
     let traffic_light = TrafficLight::<Green>::new();
 
     traffic_light.next().next().next().next();
-
 }

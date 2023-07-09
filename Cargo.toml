@@ -10,3 +10,8 @@ members = ["crates/*"]
 
 [dependencies]
 proc_enum = { path = "crates/proc_enum" }
+
+[workspace.dependencies]
+syn = "*"
+quote = "*"
+proc-macro2 = "*"
